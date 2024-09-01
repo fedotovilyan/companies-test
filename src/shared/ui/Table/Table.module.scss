@@ -1,0 +1,22 @@
+table {
+   border-spacing: 0;
+   border-collapse: collapse;
+}
+
+.table_cell {
+	padding: 15px;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.table_head_cell {
+	padding: 15px;
+	border-bottom: 1px solid #f0f0f0;
+	font-weight: 800;
+	background-color: #fafafa;
+}
+
+.table_row {
+	&:hover {
+		background-color: rgba(0, 0, 0, 0.1);
+	}
+}

@@ -1,0 +1,65 @@
+.Button {
+	padding: 6px;
+	transition: all 0.3s ease-in-out;
+	border-radius: 5px;
+}
+
+.primary {
+	background-color: rgba($color: #53b4f5, $alpha: 1);
+	color: #fff;
+	border: none;
+
+	&:hover {
+		background-color: color-mix(
+			in srgb,
+			rgba($color: #53b4f5, $alpha: 1),
+			rgba(255, 255, 255, 0.1)
+		);
+		color: #fff;
+	}
+
+	&:active {
+		background-color: color-mix(in srgb, rgba($color: #53b4f5, $alpha: 1), rgb(1, 57, 66));
+	}
+}
+
+.link {
+	background-color: transparent;
+	border: none;
+	color: var(--link-color);
+
+	&:hover {
+		color: var(--link-color-hovered);
+	}
+
+	&:active {
+		color: var(--link-color-active);
+	}
+}
+
+.transparent {
+	background-color: transparent;
+	border: none;
+
+	&:hover {
+		background-color: transparent;
+	}
+
+	&:active {
+		background-color: transparent;
+	}
+}
+
+.error {
+	background-color: #ff4d4f;
+	color: #fff;
+	border: none;
+
+	&:hover {
+		background-color: rgba($color: #ff4d4f, $alpha: 0.5);
+	}
+
+	&:active {
+		background-color: rgba($color: #ff4d4f, $alpha: 0.7);
+	}
+}

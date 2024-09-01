@@ -1,0 +1,33 @@
+.Input {
+	width: 100%;
+	padding: 9px;
+	border: 2px solid rgba($color: #e7e7e773, $alpha: 0.5);
+	background-color: rgba($color: #fcfcfc24, $alpha: 1);
+	border-radius: 5px;
+	box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.1);
+}
+
+.Input:focus {
+	border: 2px solid rgba($color: #e7e7e773, $alpha: 1) !important;
+	outline: none;
+}
+
+.transparent {
+	border: none;
+	background-color: transparent;
+	padding: 0;
+	outline: none;
+	width: auto;
+	box-shadow: none;
+	text-align: center !important;
+
+	&:focus {
+		border: none !important;
+		outline: none !important;
+	}
+
+	&:active {
+		border: none !important;  
+		outline: none !important;
+	}
+}
